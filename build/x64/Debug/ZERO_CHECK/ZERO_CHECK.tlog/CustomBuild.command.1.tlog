@@ -1,0 +1,10 @@
+^C:\USERS\BOBBY\DESKTOP\GOOFY\BUILD\CMAKEFILES\974527BDE592868899C6B37BC1CE4A40\GENERATE.STAMP.RULE
+setlocal
+C:\mingw64\bin\cmake.exe -SC:/Users/Bobby/Desktop/Goofy -BC:/Users/Bobby/Desktop/Goofy/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Bobby/Desktop/Goofy/build/fogpi.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

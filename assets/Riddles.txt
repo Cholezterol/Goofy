@@ -1,0 +1,20 @@
+Riddle 1
+A
+hint1
+hint2
+hint3
+Riddle 2
+A
+hint1
+hint2
+hint3
+Riddle 3
+A
+hint1
+hint2
+hint3
+Riddle 4
+A
+hint1
+hint2
+hint3

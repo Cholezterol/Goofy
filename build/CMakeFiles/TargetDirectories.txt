@@ -1,0 +1,3 @@
+C:/Users/Bobby/Desktop/Goofy/build/CMakeFiles/fogpi.dir
+C:/Users/Bobby/Desktop/Goofy/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Bobby/Desktop/Goofy/build/CMakeFiles/ZERO_CHECK.dir
