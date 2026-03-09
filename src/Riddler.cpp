@@ -5,16 +5,18 @@
 #include <string>
 #include <iostream>
 #include <random>
+#include "Room.hpp"
 void Riddler::Start(Vec2 _pos) {
     m_character = 'R';
     m_position = _pos;
-    Riddle chosen;
-
+    pos = _pos;
+}
+bool Riddler::Doscene(){
     std::ifstream riddleFile("assets/Riddles.txt");
     if (!riddleFile)
     {
         std::cerr << "Error opening riddles file!" << std::endl;
-        return;
+        return false;
     }
     std::vector<Riddle> riddles;
     while (riddleFile) {
@@ -29,10 +31,29 @@ void Riddler::Start(Vec2 _pos) {
 
     int randomIndex = random_int(0, riddles.size() - 1);//1 + rand() % d.sides;
     chosen = riddles[randomIndex];
-    std::cout << "\nAnswer: " << chosen.question << "\n";
+
+    std::cout << "\nYou come across a riddler! \n" << chosen.question << "\n";
+    while (true) {
+        std::string playerInput;
+        std::cin >> playerInput;
+        std::vector<std::string> hints = { chosen.hint1, chosen.hint2, chosen.hint3 };
+        if (playerInput == chosen.answer){
+            std::cout << "Correct! You shall pass young travelor! .\n";
+            return true;
+        }
+        else{
+            hintcount--;
+            if (hintcount > 0){
+                std::cout << "Oof, Wrong answer! You have " << hintcount << " hints left! \n Here is your hint:" << hints[4 - hintcount] << "\n";
+            }
+            else{
+                std::cout << "Eek! The Riddler takes offense to your wrong answers and attacks you! \n";
+                return false;
+            }
+        }
+    }
 }
 
 void Riddler::Update() {
-    //while(request_char("hit w to continue: ") != 'w') {}
 
 }

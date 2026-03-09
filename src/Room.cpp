@@ -83,7 +83,6 @@ void Room::Load(std::string _path)
 
             if (m_map[y][x] == 'R')
             {
-                std::cout << "Riddler found at: " << x << ", " << y << std::endl;
                 Riddler r;
                 r.Start(Vec2(x,y));
                 m_riddlers.push_back(r);
@@ -106,11 +105,13 @@ void Room::Load(std::string _path)
 
 void Room::Update()
 {
-    Draw();
     if (m_player != nullptr)
     {
         m_player->room = this;
         m_player->Update();
+        if (m_player->locked == false) {
+                Draw();
+        }
     }
 }
 
@@ -159,6 +160,29 @@ void Room::OpenDoor(Vec2 _pos)
         if (m_doors[i].pos == _pos)
         {
             Load(m_doors[i].path.c_str());
+        }
+    }
+}
+
+void Room::DoRiddle(Vec2 _pos)
+{
+    for(int i = 0; i < m_riddlers.size(); i++)
+    {
+        if (m_riddlers[i].pos == _pos)
+        {
+            m_player->locked = true;
+            if (m_riddlers[i].Doscene()){
+                ClearLocation(_pos);
+                m_player->locked = false;
+                m_player->gold += 10;
+                std::cout << "The Riddler gives you 10 gold and leaves! You now have " << m_player->gold << " gold! \n";
+            }
+            else{
+                m_player->health -= 20;
+                m_player->locked = false;
+                std::cout << "The Riddler attacks you and you lose 20 health! You now have " << m_player->health << " health! \n";
+            }
+    
         }
     }
 }
