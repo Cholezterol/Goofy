@@ -1,20 +1,160 @@
 What can you put in a barrel to make it lighter?
 Hole
-hint1
-hint2
-hint3
+It's not a liquid.
+It's something missing.
+It's invisible.
 What is faster than the speed of sound, but is still human?
-A
-hint1
-hint2
-hint3
-Riddle 3
-A
-hint1
-hint2
-hint3
-Riddle 4
-A
-hint1
-hint2
-hint3
+Thought
+You can do it in your mind.
+It doesn't travel physically.
+It happens instantly.
+I speak without a mouth and hear without ears. What am I?
+Echo
+You hear me in caves.
+I repeat what you say.
+I vanish quickly.
+What has keys but can't open locks?
+Piano
+You can play me.
+I have black and white keys.
+I make music.
+What has hands but can't clap?
+Clock
+I tell time.
+I hang on walls.
+I tick and tock.
+What has one eye but can't see?
+Needle
+I am sharp.
+I am used for sewing.
+I have a hole at the top.
+The more of me you take, the more you leave behind. What am I?
+Footsteps
+I happen when you walk.
+You leave a trail.
+I disappear if you stay still.
+What has cities, but no houses; forests, but no trees; and water, but no fish?
+Map
+I am flat.
+You can read me.
+I am used for navigation.
+I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I?
+Fire
+I am hot.
+I can burn wood.
+I provide warmth.
+What comes once in a minute, twice in a moment, but never in a thousand years?
+M
+I am part of words.
+I appear in 'moment.'
+I am a single character.
+What can travel around the world while staying in a corner?
+Stamp
+I go on envelopes.
+I have a picture.
+I am sticky.
+What has an endless supply of letters but starts empty?
+Mailbox
+I wait outside.
+I collect messages.
+People use me to send letters.
+I am tall when I am young, and short when I am old. What am I?
+Candle
+I give light.
+I melt.
+I am made of wax.
+The more you take away from me, the bigger I get. What am I?
+Hole
+I am empty space.
+I can be dug.
+I appear in the ground.
+What can fill a room but takes up no space?
+Light
+I come from the sun.
+I brighten places.
+I cannot be touched.
+What has a head, a tail, is brown, and has no legs?
+Penny
+I am money.
+I am small.
+I can be tossed.
+What gets wetter the more it dries?
+Towel
+I am in the bathroom.
+I absorb water.
+I dry people.
+What has a neck but no head?
+Bottle
+I hold liquids.
+I have a cap.
+I am made of glass or plastic.
+I have branches, but no fruit, trunk or leaves. What am I?
+Bank
+I deal with money.
+I lend and borrow.
+I have accounts.
+What goes up but never comes down?
+Age
+Everyone has it.
+It increases with time.
+You can't stop it.
+What can you catch but not throw?
+Cold
+It makes you sneeze.
+It is contagious.
+It is caused by germs.
+I have a heart that doesn't beat. What am I?
+Artichoke
+I am edible.
+I am a vegetable.
+I have layers.
+I fly without wings. I cry without eyes. Wherever I go, darkness flies. What am I?
+Cloud
+I float in the sky.
+I can bring rain.
+I block the sun sometimes.
+The more you take me, the more you leave behind. What am I?
+Footsteps
+I mark your path.
+You make me walking.
+I disappear if you stop.
+What has a bottom at the top?
+Legs
+I support the body.
+I help you walk.
+I have knees.
+I am always in front of you but cannot be seen. What am I?
+Future
+It hasn't happened yet.
+You can plan for me.
+You hope for the best.
+What can be cracked, made, told, and played?
+Joke
+I make people laugh.
+I can be shared.
+I often has a punchline.
+I have a ring but no finger. What am I?
+Telephone
+I connect people.
+I make noise.
+I have buttons.
+I can be broken but never held. What am I?
+Promise
+I involve trust.
+I are spoken words.
+I involve honesty.
+I go up and down but never move. What am I?
+Stairs
+I am in a house.
+I have steps.
+I connect floors.
+What has a bed but never sleeps, can run but never walks?
+River
+I am full of water.
+I flow naturally.
+I can be wide or narrow.
+I have teeth but cannot eat. What am I?
+Comb
+I straighten hair.
+I am made of plastic or wood.
+I have many prongs.

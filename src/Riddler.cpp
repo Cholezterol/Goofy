@@ -12,6 +12,7 @@ void Riddler::Start(Vec2 _pos) {
     pos = _pos;
 }
 bool Riddler::Doscene(){
+    hintcount = 3;
     std::ifstream riddleFile("assets/Riddles.txt");
     if (!riddleFile)
     {
@@ -35,19 +36,18 @@ bool Riddler::Doscene(){
     std::cout << "\nYou come across a riddler! \n" << chosen.question << "\n";
     while (true) {
         std::string playerInput;
-        std::cin >> playerInput;
+        std::getline(std::cin, playerInput);
         std::vector<std::string> hints = { chosen.hint1, chosen.hint2, chosen.hint3 };
         if (playerInput == chosen.answer){
             std::cout << "Correct! You shall pass young travelor! .\n";
             return true;
         }
         else{
-            hintcount--;
             if (hintcount > 0){
-                std::cout << "Oof, Wrong answer! You have " << hintcount << " hints left! \n Here is your hint:" << hints[4 - hintcount] << "\n";
+                std::cout << "Oof, Wrong answer! You have " << hintcount << " hints left! \n Here is your hint: " << hints[3 - hintcount] << "\n";
+                hintcount--;
             }
             else{
-                std::cout << "Eek! The Riddler takes offense to your wrong answers and attacks you! \n";
                 return false;
             }
         }
