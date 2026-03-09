@@ -6,4 +6,6 @@ struct Door
 {
     Vec2 pos;
     std::string path;
+    int target;
+    bool locked;
 };

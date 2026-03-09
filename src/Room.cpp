@@ -34,12 +34,17 @@ void Room::Load(std::string _path)
 
         if (word == "next_level")
         {
-            if (file >> word)
+            std::string levCode;
+            std::string path;
+            if (file >> levCode >> path)
             {
-                m_doors.push_back(Door());
-                m_doors[m_doors.size() - 1].path = word;
-                
+                Door door;
+                door.target = levCode[0] - '0';
+                door.locked = levCode[1] == 'L';
+                door.path = path;
+                m_doors.push_back(door);
             }
+
         }
 
         if (word == "map")
@@ -90,13 +95,16 @@ void Room::Load(std::string _path)
             }
 
 
-            if (m_map[y][x] == 'D' || m_map[y][x] == 'L')
+            if (isdigit(m_map[y][x]) && m_map[y][x] != '0')
             {
-                if (m_doors.size() - 1 >= doorCount)
+                int levelNum = m_map[y][x] - '0'; 
+                for (int i = 0; i < m_doors.size(); i++)
                 {
-                    m_doors[doorCount].pos.x = x;
-                    m_doors[doorCount].pos.y = y;
-                    doorCount++;
+                    if (m_doors[i].target == levelNum)
+                    {
+                        m_doors[i].pos = Vec2(x,y);
+                        break;
+                    }
                 }
             }
         }
@@ -159,8 +167,26 @@ void Room::OpenDoor(Vec2 _pos)
     {
         if (m_doors[i].pos == _pos)
         {
-            Load(m_doors[i].path.c_str());
-        }
+
+            if (m_doors[i].locked && m_player->m_keyCount <= 0)
+            {
+                std::cout << "\n The door is locked! You'll need to find a key! \n";
+                return;
+            }
+            else if (m_doors[i].locked && m_player->m_keyCount > 0)
+            {
+                 std::cout << "\n Door Unlocked! \n";
+                 m_player->m_keyCount--;
+            }
+            else
+            {
+                std::cout << "\n You open the door! \n";
+            }
+ 
+
+            Load(m_doors[i].path.c_str());       
+            return;
+         }
     }
 }
 

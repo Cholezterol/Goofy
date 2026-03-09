@@ -10,6 +10,6 @@ public:
     bool locked = false;
     int gold = 0;
     int health = 100;
-private:
     int m_keyCount = 0;
+private:
 };

@@ -50,14 +50,14 @@ void Player::Update() {
         if (room->GetLocation(tryPos) == ' ') {
             m_position = tryPos;
         }
-
-        if (room->GetLocation(tryPos) == 'D') {
-            room->OpenDoor(tryPos);
-        }
+        
+        if (isdigit(room->GetLocation(tryPos)) && room->GetLocation(tryPos) != '0') {
+                room->OpenDoor(tryPos);
+            }
 
         if (room->GetLocation(tryPos) == 'R') {
             room->DoRiddle(tryPos);
         }
-}
+    }
         
 }

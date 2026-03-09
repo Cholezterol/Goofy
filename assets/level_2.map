@@ -1,8 +1,8 @@
 level 2
-next_level assets/level_1.map
+next_level 1U assets/level_1.map
 map
-# # D # # -1
-# 0 0 0 # -1
-# 0 0 0 # -1
+# # 1 # # -1
 # 0 S 0 # -1
+# 0 K 0 # -1
+# 0 0 0 # -1
 # # # # # -2
