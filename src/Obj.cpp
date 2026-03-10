@@ -37,8 +37,9 @@ void Obj::leverslot()
 {
     if (room->m_player->m_leverCount > 0)
     {
-        std::cout << "You Insert the lever. \n";
+        std::cout << "You escaped the dungeon!! \n";
         used = true;
+        exit(0);
     }
     else
     {
