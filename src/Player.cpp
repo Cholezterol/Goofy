@@ -41,7 +41,7 @@ void Player::Update() {
         }
 
         Vec2 tryPos = m_position + direction;
-
+        room->updateSkeletons(tryPos);
         if (room->GetLocation(tryPos) == 'K') {
             m_keyCount++;
             room->ClearLocation(tryPos);
@@ -57,6 +57,16 @@ void Player::Update() {
 
         if (room->GetLocation(tryPos) == 'R') {
             room->DoRiddle(tryPos);
+        }
+
+        if (room->GetLocation(tryPos) == 'C')
+        {
+            room->OpenChest(tryPos);
+        }
+
+        if (room->GetLocation(tryPos) == '?')
+        {
+            room->doObject(tryPos);
         }
     }
         

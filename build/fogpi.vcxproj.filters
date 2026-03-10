@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="C:\Users\Bobby\Desktop\Goofy\src\Obj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\Bobby\Desktop\Goofy\src\Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -8,6 +11,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\Bobby\Desktop\Goofy\src\Room.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Bobby\Desktop\Goofy\src\Skeleton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\Bobby\Desktop\Goofy\src\fogpi\Math.cpp">
@@ -21,6 +27,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\Bobby\Desktop\Goofy\src\Chest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\Bobby\Desktop\Goofy\src\DataStructures\LinkList.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -33,6 +42,9 @@
     <ClInclude Include="C:\Users\Bobby\Desktop\Goofy\src\Entity.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\Bobby\Desktop\Goofy\src\Obj.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\Bobby\Desktop\Goofy\src\Player.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -40,6 +52,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Bobby\Desktop\Goofy\src\Room.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Bobby\Desktop\Goofy\src\Skeleton.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Bobby\Desktop\Goofy\src\fogpi\Math.hpp">

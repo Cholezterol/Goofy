@@ -1,9 +1,10 @@
 level 1
-next_level 2L assets/level_2.map
+next_level 2U assets/level_2.map
 next_level 3U assets/level_3.map
+next_level 4U assets/level_4.map
 map
 # # 2 # # -1
-# 0 R K # -1
-# 0 0 0 3 -1
-# 0 S 0 # -1
+# 0 0 0 # -1
+4 0 0 R 3 -1
+# 0 B 0 # -1
 # # # # # -2

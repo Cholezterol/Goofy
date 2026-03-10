@@ -1,0 +1,9 @@
+level 4
+next_level 1U assets/level_1.map
+Object_info LeverSlot
+map
+# # # # # # # # # # -1
+# 0 0 0 0 0 0 0 0 # -1
+? 0 0 S 0 0 0 0 B 1 -1
+# 0 0 0 0 0 0 0 0 # -1
+# # # # # # # # # # -2

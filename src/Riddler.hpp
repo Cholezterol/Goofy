@@ -19,7 +19,7 @@ public:
     void Update();
     Vec2 pos;
     Riddle chosen;
-    int hintcount = 3;
+    int hintcount;
     bool Doscene();
 private:
 
